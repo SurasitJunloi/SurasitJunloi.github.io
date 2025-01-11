@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD, Inggg</title>
+    <style>
+        @font-face {
+            font-family: 'Khaitun';
+            src: url(./font/Khaitun/KhaitunDemo.ttf);
+        }
+        @font-face {
+            font-family: 'Rubik';
+            src: url(./font/Rubik_Vinyl/RubikVinyl-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'TCS';
+            src: url(./font/TCS-Number08/TCS\ Number08\ Demo.ttf);
+        }
+        @media only screen and (max-width: 768px) {
+            body {
+                display: none;
+            }
+        }
+        body, html {
+            background-color: #f9e4ff;
+            text-align: center;
+            color: #333;
+            padding: 50px;
+            margin: 0;
+        }
+        #passwordForm {
+            display: block;
+        }
+        #content {
+            display: none; 
+        }
+        h3 {
+            font-size: 3em;
+            padding: 20%;
+            color: #ff77ff;
+            margin: 0;
+        }
+        h4 {
+            font-size: 2em;
+            color: #ff8c00;
+            margin-top: -20%;
+            margin-bottom: 25%;
+        }
+        .message {
+            font-family: 'Khaitun';
+            font-size: 1.5em;
+            color: black;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+        }
+        .balloons {
+            font-size: 5em;
+            color: #ff007f;
+            margin-top: 30px;
+        }
+        .confetti {
+            font-size: 3em;
+            color: #ff00ff;
+            margin-top: 40px;
+        }
+        .birthday-cake {
+            font-size: 6em;
+            color: #ff6600;
+            margin-top: 40px;
+        }
+        .form{
+            border: 0;
+        }
+        .form_cl{
+            font-family: 'Rubik';
+        }
+        .orm{
+            font-family: 'TCS';
+            border: 0;
+        }
+        .font_comment{
+            font-family: 'TCS';
+        }
+        .Picture {
+            font-family: 'Rubik';
+            font-size: 3em;
+        }
+        .container {
+            background-color:  #b7d9fb;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .passwordinput {
+            border: 0;
+        }
+        .password-text {
+            font-family: 'Khaitun';
+        }
+        img {
+            border-radius: 10%;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <h2 class="password-text">Enter the password</h2>
+    <input class="passwordinput" type="password" id="password" placeholder="Enter Password">
+    <button class="passwordinput" onclick="checkPassword()">Confirm</button>
+        <div>
+            <p class="password-text">เคยส่งรหัสไปให้ในแชทละ</p>
+        </div>
+            <div id="content">
+                <h3 class="form_cl">🎉 Happy Birthdayyyyy 🎉</h3>
+                <h4 class="form_cl">
+                    to khun Surapha
+                    <div>
+                        Peaun Rak
+                    </div>
+                </h4>
+        
+                    <div class="balloons">
+                        🎈 🎈 🎈
+                    </div> 
+                    <div class="container">
+                            <div class="message">
+                                <p>17ปีละชะ แก่ตามกุมาละ เรียกกุแก่ไม่ได้ละนะมึงอ่ะ ไม่รู้จะบอกไรดีว่ะ ขอให้มึงมีความสุขมากๆ ร่างกายสุขภาพแข็งแรง</p>
+                            </div>
+                            <div class="message">
+                                <p>ถ้าเจอปัญหาอะไรก็ขอให้ผ่านไปได้แบบชิวๆ อย่าเครียดเยอะเดี๋ยวแก่เร็ว</p>
+                            </div>
+                            <div class="message">
+                                <p>วันเกิดมึงผ่านมาหลายรอบละกุไม่เคยให้อะไรเลย รอบนี้กุเลยนั่งฝึกทำอะไรแบบนี้นี่แหละ</p>
+                            </div>
+                            <div class="message">
+                                <p>แต่พึ่งฝึกได้ไม่นานก็อาจจะชุ่ยๆหน่อย ตอนแรกว่าจะให้ตังแต่มันแบบง่ายไปไม่ใช่กู 55555(รูปอยู่ด้านล่าง)</p>
+                            </div>
+                            <div class="message">
+                                <p>ที่ส่งให้ก่อนวันเกิดจริงเพราะวันเกิดมึงกุไปเข้าค่าย รด พอดีอะดิ่จบเลย</p>
+                            </div>
+                            <div class="message">
+                                <p>(ร้อนวิชาอะดิเลยลองทำดู ดูไปดูมากุก็เก่งนะนิ่หว่า)</p>
+                            </div>
+                        </div>
+        
+                    <div class="confetti">
+                        🎊 🎊 🎊
+                    </div>
+        
+                    <div class="birthday-cake">
+                        🎂
+                    </div>
+                    <div class="font_comment">
+                        พอใจอะป่าวอยากได้ความคิดเห็น(ช่องใส่มันยืดหดได้นะถ้าใช้ในคอม)
+                    </div>
+                    <textarea class="form"></textarea>
+                    <div>
+                    <button class="orm">Submit</button>
+                    </div>
+        
+                    <div>
+                        <p class="Picture">
+                            A Picture
+                        </p>
+                    </div>
+                    <picture> 
+                            <img src="./img/pic1.jpg" alt="" srcset="">
+                            <img src="./img/pic2.jpg" alt="" srcset="">
+                            <source 
+                                media = "(max-width: 768px)"
+                                srcset = "./img/pic3.jpg">
+            </div>
+
+    <script>
+        const correctPassword = "squid";
+
+        function checkPassword() {
+            
+            const userPassword = document.getElementById("password").value;
+
+            
+            if (userPassword === correctPassword) {
+                
+                document.getElementById("content").style.display = "block";
+                alert("Welcome!");
+            } else {
+                
+                alert("Password Incorrect 55555");
+            }
+        }
+    </script>
+
+</body>
+</html>
