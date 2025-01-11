@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Khaitun';
+    src: url(./font/Khaitun/KhaitunDemo.ttf);
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url(./font/Rubik_Vinyl/RubikVinyl-Regular.ttf);
+}
+@font-face {
+    font-family: 'TCS';
+    src: url(./font/TCS-Number08/TCS\ Number08\ Demo.ttf);
+}
+@media only screen and (max-width: 768px) {
+    body {
+        display: none;
+    }
+    }
+    body, html {
+        background-color: #f9e4ff;
+        text-align: center;
+        color: #333;
+        padding: 50px;
+        margin: 0;
+    }
+    #passwordForm {
+        display: block;
+    }
+    #content {
+        display: none; 
+    }
+    h3 {
+        font-size: 3em;
+        padding: 20%;
+        color: #ff77ff;
+        margin: 0;
+    }
+    h4 {
+        font-size: 2em;
+        color: #ff8c00;
+        margin-top: -20%;
+        margin-bottom: 25%;
+    }
+    .message {
+        font-family: 'Khaitun';
+        font-size: 1.5em;
+        color: black;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+    }
+    .balloons {
+        font-size: 5em;
+        color: #ff007f;
+        margin-top: 30px;
+    }
+    .confetti {
+        font-size: 3em;
+        color: #ff00ff;
+        margin-top: 40px;
+    }
+    .birthday-cake {
+        font-size: 6em;
+        color: #ff6600;
+        margin-top: 40px;
+    }
+    .form{
+        border: 0;
+    }
+    .form_cl{
+        font-family: 'Rubik';
+    }
+    .orm{
+        font-family: 'TCS';
+        border: 0;
+    }
+    .font_comment{
+        font-family: 'TCS';
+    }
+    .Picture {
+        font-family: 'Rubik';
+        font-size: 3em;
+    }
+    .container {
+        background-color:  #b7d9fb;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .passwordinput {
+        border: 0;
+    }
+    .password-text {
+        font-family: 'Khaitun';
+    }
+    img {
+        border-radius: 10%;
+        padding: 100px;
+    }
