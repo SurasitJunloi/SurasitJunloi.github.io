@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'TCS';
+    src: url(./font/TCS-Number08/TCS\ Number08\ Demo.ttf);
+}
+.fa {
+    padding: 10px;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background-color: #c13584;
+}
+
+.fa-instagram {
+    color: white;
+    background-color: #E1306C;
+    transition: background-color 0.3 ease;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.meme {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border-radius: 8px;
+}
+body {
+    text-align: center;
+}
+
+.text-meme {
+    font-family: 'TCS';
+}
