@@ -1,100 +1,255 @@
-@font-face {
-    font-family: 'Khaitun';
-    src: url(./font/Khaitun/KhaitunDemo.ttf);
-}
-@font-face {
-    font-family: 'Rubik';
-    src: url(./font/Rubik_Vinyl/RubikVinyl-Regular.ttf);
-}
-@font-face {
-    font-family: 'TCS';
-    src: url(./font/TCS-Number08/TCS\ Number08\ Demo.ttf);
-}
-@media only screen and (max-width: 768px) {
-    body {
-        display: none;
-    }
-    }
-    body, html {
-        background-color: #f9e4ff;
-        text-align: center;
-        color: #333;
-        padding: 50px;
-        margin: 0;
-    }
-    #passwordForm {
-        display: block;
-    }
-    #content {
-        display: none; 
-    }
-    h3 {
-        font-size: 3em;
-        padding: 20%;
-        color: #ff77ff;
-        margin: 0;
-    }
-    h4 {
-        font-size: 2em;
-        color: #ff8c00;
-        margin-top: -20%;
-        margin-bottom: 25%;
-    }
-    .message {
-        font-family: 'Khaitun';
-        font-size: 1.5em;
-        color: black;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
+* {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          border-radius: 8px;
+        }
+        
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        
+        @font-face {
+            font-family: 'Khaitun';
+            src: url(./font/Khaitun/KhaitunDemo.ttf);
+        }
+        
+        @font-face {
+            font-family: 'Rubik';
+            src: url(./font/Rubik_Vinyl/RubikVinyl-Regular.ttf);
+        }
+        
+        @font-face {
+            font-family: 'TCS';
+            src: url(./font/TCS-Number08/TCS\ Number08\ Demo.ttf);
+        }
+        
+        @media only screen and (max-width: 768px) {
+            body {
+                display: none;
+            }
+            }
+            
+            body, html {
+                background-color: #f9e4ff;
+                text-align: center;
+                color: #333;
+                padding: 50px;
+                margin: 0;
+            }
+            
+            #passwordForm {
+                display: block;
+            }
+            
+            #content {
+                display: none; 
+            }
+           
+            h3 {
+                font-size: 3em;
+                padding: 20%;
+                color: #ff77ff;
+                margin: 0;
+            }
+            
+            h4 {
+                font-size: 2em;
+                color: #ff8c00;
+                margin-top: -20%;
+                margin-bottom: 25%;
+            }
+            
+            .message {
+                font-family: 'Khaitun';
+                font-size: 1.5em;
+                color: black;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+        
+            }
+            
+            .balloons {
+                    font-size: 5em;
+                    color: #ff007f;
+                    margin-top: 30px;
+                }
+            
+            .confetti {
+                font-size: 3em;
+                color: #ff00ff;
+                margin-top: 40px;
+            }
+                
+            .birthday-cake {
+                    font-size: 6em;
+                    color: #ff6600;
+                    margin-top: 40px;
+                }
+            
+            .form{
+                border: 0;
+            }
+            
+            .form_cl{
+                font-family: 'Rubik';
+            }
+            
+            .orm {
+                font-family: 'TCS';
+                border: 0;
+            }
+            
+            .orm span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            
+            .orm span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+                
+            .orm:hover span {
+                padding-right: 25px;
+            }
+                
+            .orm:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
 
-    }
-    .balloons {
-        font-size: 5em;
-        color: #ff007f;
-        margin-top: 30px;
-    }
-    .confetti {
-        font-size: 3em;
-        color: #ff00ff;
-        margin-top: 40px;
-    }
-    .birthday-cake {
-        font-size: 6em;
-        color: #ff6600;
-        margin-top: 40px;
-    }
-    .form{
-        border: 0;
-    }
-    .form_cl{
-        font-family: 'Rubik';
-    }
-    .orm{
-        font-family: 'TCS';
-        border: 0;
-    }
-    .font_comment{
-        font-family: 'TCS';
-    }
-    .Picture {
-        font-family: 'Rubik';
-        font-size: 3em;
-    }
-    .container {
-        background-color:  #b7d9fb;
-        padding: 10px;
-        border-radius: 15px;
-    }
-    .passwordinput {
-        border: 0;
-    }
-    .password-text {
-        font-family: 'Khaitun';
-    }
-    img {
-        border-radius: 10%;
-        padding: 100px;
-    }
+            .font_comment{
+                font-family: 'TCS';
+            }
+            
+            .Picture {
+                font-family: 'Rubik';
+                font-size: 3em;
+            }
+            
+            .container {
+                background-color:  #b7d9fb;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            
+            .passwordbutton {
+                border: 0;
+            }
+
+            .passwordbutton span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            
+            .password-text {
+                font-family: 'Khaitun';
+            }
+
+            .passwordbutton span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+                
+            .passwordbutton:hover span {
+                padding-right: 25px;
+            }
+                
+            .passwordbutton:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            
+            img {
+                border-radius: 10%;
+                padding: 100px;
+            }
+            
+            img {
+                border-radius: 15px;
+            }
+
+            .fa {
+                padding: 10px;
+                font-size: 16px;
+                width: 80px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+                background-color: #c13584;
+            }
+
+            .fa-instagram {
+                color: white;
+                background-color: #E1306C;
+                transition: background-color 0.3 ease;
+                border-radius: 5px;
+                text-decoration: none;
+            }
