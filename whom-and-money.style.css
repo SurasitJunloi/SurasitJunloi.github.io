@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'TCS';
+    src: url(./font/TCS-Number08/TCS\ Number08\ Demo.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(./font/Rubik_Vinyl/RubikVinyl-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Khaitun';
+    src: url(./font/Khaitun/KhaitunDemo.ttf);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background-color: #c13584;
+}
+
+.fa-instagram {
+    color: white;
+    background-color: #E1306C;
+    transition: background-color 0.3 ease;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.meme {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border-radius: 8px;
+}
+body {
+    text-align: center;
+}
+
+.text-meme {
+    font-family: 'TCS';
+}
+
+.codebutton {
+    font-family: 'Rubik';
+    border: 0;
+}
+
+.codebutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.codebutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+    
+.codebutton:hover span {
+    padding-right: 25px;
+}
+    
+.codebutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.codetext {
+    color: black;
+    font-family: 'Rubik';
+    font-size: 40px;
+}
+
+.text-meme {
+    padding-bottom: 6px;
+}
+
+.button-nextpage {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    font-family: 'Khaitun';
+}
+
+.button-nextpage span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-nextpage span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-nextpage:hover span {
+    padding-right: 25px;
+}
+
+.button-nextpage:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.message {
+    font-family: 'TCS';
+    font-size: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 200px;
+}
