@@ -2,14 +2,21 @@
     font-family: 'Rubik';
     src: url(./font/Rubik_Vinyl/RubikVinyl-Regular.ttf);
 }
-body {
+body, html {
     background-color: pink;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
 }
+
 .button {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
     font-family: 'Rubik';
-    font-size: 50px;
-    color: black;
-    margin-top: 20%;
-    place-items: center;
-    display: grid;
+    cursor: pointer;
 }
